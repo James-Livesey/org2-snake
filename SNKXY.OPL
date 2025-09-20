@@ -1,0 +1,2 @@
+SNKXY:(X%,Y%)
+RETURN X%+(Y%-1)*16
