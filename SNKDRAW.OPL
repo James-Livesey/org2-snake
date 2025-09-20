@@ -1,0 +1,12 @@
+SNKDRAW:(X%,Y%)
+LOCAL YA%,YB%,C%
+YA%=1+(Y%-1)/2
+YB%=1+Y%-YA%
+IF AREA%(SNKXY:(X%,YA%*2-1))<>0
+ C%=1
+ENDIF
+IF AREA%(SNKXY:(X%,YA%*2))<>0
+ C%=C%+2
+ENDIF
+AT X%,YA%
+PRINT CHR$(C%);
